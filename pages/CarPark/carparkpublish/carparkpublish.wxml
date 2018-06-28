@@ -1,0 +1,14 @@
+<view class="section">
+请选择地址<input  placeholder="请选择地址"  bindtap="chooseLocation"/>
+<form bindsubmit='insertpublishInfo'>
+<view hidden="true"><input name="carparkid" value='{{userId}}'> </input></view>
+ 省<input name="carparkpro" value='{{province}}' placeholder="请输入省"  />
+  市<input name="carparkcity" value='{{city}}'  placeholder="请输入市"  />
+  县<input name="carparkcounty" value='{{district}}' placeholder="请输入县"  />
+  详细地址<input name="carparkdetailaddress" value='{{detailAddress}}' placeholder="请输入详细地址"  />
+  纬度<input name="longitude" value='{{longitude}}' placeholder="请输入纬度"  />
+  经度<input name="latitude" value='{{latitude}}' placeholder="请输入经度"  />
+  车位数<input name="parkingcount" placeholder="请输入车位数"  />
+  <button form-type='submit'>新增</button>
+  </form>
+</view>

@@ -1,0 +1,167 @@
+<view class="container container-gray">
+<form bindsubmit="formSubmit" >  
+	<view class="group">
+		<view class="group-body">
+			<view class="input-list">
+				<view class="input-item">
+					<view class="input-item-label" >
+            <image mode="aspectFill" src="../../images/pubtitle.png"></image>标题
+          </view>
+					<view class="input-item-content">
+						<input type="text" name="publishTitle" placeholder="标题"  maxlength="16" value=""></input>
+					</view>
+				</view>
+				<view class="input-item">
+					<view class="input-item-label" >
+            <image mode="aspectFill" src="../../images/pubname.png"></image>姓名
+          </view>
+					<view class="input-item-content">
+						<input type="text" name="publishUserName" placeholder="发布人"  value="{{userInfo.nickName}}"></input>
+					</view>
+				</view>
+				<view class="input-item">
+					<view class="input-item-label" >
+            <image mode="aspectFill" src="../../images/punphone.png"></image>电话
+          </view>
+					<view class="input-item-content">
+						<input type="text"  name="publishUserTel" placeholder="联系电话" value="{{phone}}"></input>
+					</view>
+				</view>
+				<view class="input-item">
+					<view class="input-item-label" >
+            <image mode="aspectFill" src="../../images/pubcarenum.png"></image>车牌
+          </view>
+				<view class="ar_picker_wrap">
+        		<picker bindchange="bindCasPickerChange" value="{{casIndex}}" range-key="carNumber" range="{{carInfo}}">
+            	<view>
+                <text class='picker'>{{carInfo[casIndex].carNumber}}</text>
+            	</view>
+        		</picker>
+   				 </view>
+					
+				</view>
+				<view class="input-item">
+					<view class="input-item-label" >
+            <image mode="aspectFill" src="../../images/puncolo.png"></image>颜色
+          </view>
+					<view class="input-item-content">
+						 <text class='picker'>{{carInfo[casIndex].carColor}}</text>
+					</view>
+				</view>
+				<view class="input-item">
+					<view class="input-item-label" >
+            <image mode="aspectFill" src="../../images/pubcartype.png"></image>车型
+          </view>
+					<view class="input-item-content">
+						<text class='picker'>{{carInfo[casIndex].carType}}</text>
+					</view>
+				</view>
+				<view class="input-item">
+					<view class="input-item-label" >
+            <image mode="aspectFill" src="../../images/publoca.png"></image>地址
+          </view>
+					<view class="input-item-content" bindtap="chooseLocation">
+						<input type="text" placeholder="请输入地址" value="{{address}}"></input>
+					</view>
+				</view>
+				<view class="input-item">
+					<view class="input-item-label" >
+            <image mode="aspectFill" src="../../images/pubadd.png"></image>详细
+          </view>
+					<view class="input-item-content">
+						<input type="text" placeholder="请输入详细地址"  value="{{detailAddress}}"></input>
+					</view>
+				</view>
+				<view class="input-item">
+					<view class="input-item-label" >
+            <image mode="aspectFill" src="../../images/pubstart.png"></image>起始
+          </view>
+						<picker mode="time" value="{{startTime}}" name="startTime" start="00:00" end="24:00" bindchange="bindTimeChange">  
+    					<view class="picker {{placehst?'placeh':''}}">  
+     					 {{startTime}}  
+    					</view>  
+  						</picker> 
+					
+				</view>
+
+
+				<view class="input-item">
+					<view class="input-item-label" >
+            <image mode="aspectFill" src="../../images/pubcartype.png"></image>结束
+          </view>
+				
+						<picker mode="time" value="{{endTime}}" name="endTime" start="{{pubend}}" end="21:01" bindchange="bindTimeChangeTwo">  
+    					<view class="picker {{placehed?'placeh':''}}">  
+     					{{endTime}}  
+    					</view>  
+  						</picker>  
+					
+				</view>
+				
+
+
+
+
+				<view class="input-item">
+					<view class="input-item-label" >
+            <image mode="aspectFill" src="../../images/pubmay.png"></image>金额
+          </view>
+					<view class="input-item-content">
+						<input type="text" name="publishPrice" placeholder="请输入金额"></input>
+					</view>
+				</view>
+        
+				<view class="input-item input-item-full">
+					<view class="input-item-label" style="float: left;">
+            <image mode="aspectFill" src="../../images/pubabs.png"></image>备注
+          </view>
+          <view class="input-item-content">
+					<textarea class='pub-abs' placeholder="请输入备注信息，可输入50字" maxlength="50" name="remark"></textarea>
+          </view>
+				</view>
+
+				<view class="input-item states">
+          <view class='states-in'>
+            <text class="states-tit">状态:</text>
+            <view class='form-group'>  
+                        <radio-group name="publishStatus">  
+                          <label>草稿<radio value="0" color='#4bd7bd' checked/></label>  
+                          <label>发布<radio value="1" color='#4bd7bd'/></label>  
+                        </radio-group>  
+            </view> 
+          </view>
+				</view>
+				
+            	
+
+				<view hidden="true">
+          <input type="text" name="publishUserId" value="{{userId}}"></input>
+
+          <input type="text" name="publishUserImg" value="{{userInfo.avatarUrl}}"></input>
+
+          <input type="text" name="publishCarCard" value="{{carInfo[casIndex].carNumber}}"></input>
+              
+          <input type="text" name="publishCarColor" value="{{carInfo[casIndex].carColor}}"></input>
+              
+          <input type="text" name="publishCarType" value="{{carInfo[casIndex].carType}}"></input>
+
+          <input type="text" name="publishDetailAddress" value="{{detailAddress}}"></input>
+				
+					<input type="text" name="publishPro" value="{{province}}"></input>
+				
+					<input type="text" name="publishCity" value="{{city}}"></input>
+				
+					<input type="text" name="publishCounty" value="{{district}}"></input>
+
+					<input type="text" name="longitude" value="{{longitude}}"></input>
+
+					<input type="text" name="latitude" value="{{latitude}}"></input>
+				</view>
+		</view>
+	</view>
+	</view>
+	<view class="btn-submit" >
+		<button class="btn-orange" style=""  formType="submit" >提交</button>
+	</view>
+</form>
+</view>

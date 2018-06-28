@@ -1,0 +1,68 @@
+/* pages/charge/index.wxss */
+/*.input-box{
+        background-color: #fff;
+        margin: 0 auto;
+        padding: 20rpx 0;
+        border-radius: 10rpx;
+        width: 90%;
+ 
+}
+.input-box input{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+}
+*/
+.warpper{
+	padding:0rpx 20rpx;
+}
+.header{
+	display: flex;
+	justify-content:space-between;
+	margin-top:30rpx;
+	padding:0rpx 20rpx;
+}
+.user-hear-pic{
+	display: flex;
+	justify-content:center;
+}
+.user-hear-pic image{
+	width:244rpx;
+	height:244rpx;
+	border-radius: 50%;
+	margin-top: 15rpx;
+	margin-bottom: 60rpx;
+}
+.warpper .font{
+	font-size: 30rpx;
+	color:#7f807e;
+}
+.warpper .font-b{
+	font-size: 32rpx;
+}
+ .flex-container .title{
+	color:#444;
+  font-size: 40rpx;
+} 
+.btn-charge{
+	border:none;
+	color:#fff;
+	background-color: #4bd7bd;
+	width:710rpx;
+	height:80rpx;
+	margin-top: 75rpx;
+}
+ .flex-container .input-box{
+	border:1rpx solid #aaa;
+	width: 138rpx;
+	height:68rpx;
+	border-radius: 8rpx;
+  text-align: center;
+  
+} 
+.flex-container{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+

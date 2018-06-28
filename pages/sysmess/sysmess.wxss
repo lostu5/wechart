@@ -1,0 +1,44 @@
+.ar_coverpath{
+    width:100%;
+    margin:0;
+    box-sizing:border-box;
+    height: 30rpx;
+    background-color: #efefef;
+}
+.container {
+  width: 100%;
+
+}
+.lists {
+  width: 100%;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.lists .list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 112rpx;
+  border-bottom: 1rpx solid #efefef;
+}
+.lists .list .list-l {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.lists .list .list-l .title {
+  font-size: 30rpx;
+  color: #000;
+  line-height: 60rpx;
+}
+.lists .list .list-l  .tip{
+  color: #a7a6a4;
+  font-size: 24rpx;
+}
+.lists .list .list-r image {
+  width: 10rpx;
+  height: 20rpx;
+  padding: 20rpx;
+}

@@ -1,0 +1,18 @@
+  <view class='container'>
+    <image class='bg' mode="aspectFill" src="../../images/aboutus.png"></image>
+      <view class='lists'>
+          <view class='list'>
+            <view>官方网站:</view>
+            <text>http://www.qhdhengshuo.com</text>
+          </view>
+          <view class='list'>
+            <view>公司邮箱:</view>
+            <text>3215963330@qq.com</text>
+          </view>
+          <view class='list'>
+            <view>公司地址:</view>
+            <view class='address'>秦皇岛经济技术开发区淮河道1号（弘正大厦五层）</view>
+          </view>
+      </view>
+
+  </view>

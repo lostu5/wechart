@@ -1,0 +1,35 @@
+.list { 
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  padding: 20rpx 20rpx 0;
+  height: 170rpx;
+  border-bottom: 1rpx solid #d9d9da;
+}
+.list .list_tit {
+  font-size: 30rpx;
+  color: #444;
+  display: block;
+  line-height: 50rpx;
+  font-weight: 600;
+}
+.list .list_abs,.list .list_time {
+  color: #a1a1a1;
+  font-size: 24rpx;
+  line-height: 40rpx;
+  display: block;
+}
+.list .list_right {
+  position: absolute;
+  right: 30rpx;
+  top: 50rpx;
+}
+.list .list_right .list_num {
+  display: block;
+  line-height: 40rpx;
+}
+.list .list_right .list_succ {
+  width: 60rpx;
+  height: 60rpx;
+  float: right;
+}

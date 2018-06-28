@@ -1,0 +1,86 @@
+<view class="container">
+<view class="ar_coverpath">
+   <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="18" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 200px;"></map>
+</view>
+<view class="input-list">
+  <view class="input-item">
+    <view class="input-item-label" >
+        <image mode="aspectFill" src="../../images/pubname.png"></image>姓名
+    </view>
+		<view class="input-item-content">
+				{{publishInfo.publishusername}}
+		</view>
+  </view>
+  <view class="input-item">
+    <view class="input-item-label" >
+        <image mode="aspectFill" src="../../images/punphone.png"></image>手机
+    </view>
+		<view class="input-item-content">
+				{{publishInfo.publishusertel}}
+		</view>
+  </view>
+  <view class="input-item">
+    <view class="input-item-label" >
+        <image mode="aspectFill" src="../../images/pubcarenum.png"></image>车牌
+    </view>
+		<view class="input-item-content">
+				{{publishInfo.publishcarcard}}
+		</view>
+  </view>
+  <view class="input-item">
+    <view class="input-item-label" >
+        <image mode="aspectFill" src="../../images/puncolo.png"></image>颜色
+    </view>
+		<view class="input-item-content">
+				{{publishInfo.publishcarcolor}}
+		</view>
+  </view>
+  <view class="input-item">
+    <view class="input-item-label" >
+        <image mode="aspectFill" src="../../images/pubcartype.png"></image>车型
+    </view>
+		<view class="input-item-content">
+				{{publishInfo.publishcartype}}
+		</view>
+  </view>
+  <view class="input-item">
+    <view class="input-item-label" >
+        <image mode="aspectFill" src="../../images/pubmay.png"></image>价格
+    </view>
+		<view class="input-item-content">
+				{{publishInfo.publishprice}}
+		</view>
+  </view>
+  
+  <view class="input-item">
+    <view class="input-item-label" >
+        <image mode="aspectFill" src="../../images/publoca.png"></image>位置
+    </view>
+		<view class="input-item-content">
+				{{publishInfo.publishaddressname}}
+		</view>
+  </view>
+  <view class="input-item-full">
+    <view class="input-item-label" >
+        <image mode="aspectFill" src="../../images/pubadd.png"></image>地址
+    </view>
+		<view class="input-item-content">
+				{{publishInfo.publishdetailaddress}}
+		</view>
+  </view>
+  <view class="input-item-full">
+    <view class="input-item-label" >
+        <image mode="aspectFill" src="../../images/pubabs.png"></image>备注
+    </view>
+		<view class="input-item-content">
+				{{publishInfo.publishremark}}
+		</view>
+  </view>
+
+
+</view>
+
+	<view class="btn-submit" >
+		<button class="btn-orange" bindtap="parkWar">立即抢</button>
+	</view>
+</view>

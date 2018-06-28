@@ -1,0 +1,21 @@
+.ar_coverpath{
+    width:100%;
+    margin:0;
+    box-sizing:border-box;
+    height: 30rpx;
+    background-color: #efefef;
+}
+.container {
+  width: 100%;
+
+}
+.lists {
+  width: 100%;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.lists .list {
+  line-height: 90rpx;
+  border-bottom: 1rpx solid #efefef;
+  font-size: 36rpx;
+}

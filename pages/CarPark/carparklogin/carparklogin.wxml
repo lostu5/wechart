@@ -1,0 +1,15 @@
+ <!--账号-->  
+ <form bindsubmit='login'>
+    <view>  
+      账号<input name="name" class="inputText" placeholder="请输入账号" bindinput="phoneInput" />  
+      密码<input name="pass" class="inputText" password="true" placeholder="请输入密码" bindinput="passwordInput" />  
+      <radio-group name="role" class="radio-group" bindchange="radioChange">
+  <label class="radio" wx:for="{{items}}">
+    <radio name="role" value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+  </label>
+</radio-group>
+ <button form-type='submit'>登录</button>
+    </view>  
+    <view></view>  
+     
+  </form>

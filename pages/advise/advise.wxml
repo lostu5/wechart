@@ -1,0 +1,29 @@
+
+  <view class='container'>
+    <image class='bg' mode="aspectFill" src="../../images/aboutus.png"></image>
+    <view class='lists'>
+      <view class='title'>功能使用意见/建议反馈指引</view>
+      <view class='tip'>若您在使用停车功能过程中遇到问题或有其他咨询
+建议，请通过以下路径获取帮助或者反馈问题：</view>
+      <view class='phonenum'>
+        <view class='phonet'>
+          电话咨询：
+        </view>
+        <view class='phonen'>
+          <view>0335-5388001</view>
+          <view>0335-5388002</view>
+        </view>
+      </view>
+      <view class='phonenum'>
+        <view class='phonet'>
+          网络咨询：
+        </view>
+        <view class='phonen'>
+          <view>QQ-3215963330</view>
+          <view>V信-18133525981</view>
+        </view>
+      </view>
+
+
+    </view>
+  </view>

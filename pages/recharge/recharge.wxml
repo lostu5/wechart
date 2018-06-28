@@ -1,0 +1,15 @@
+<!--pages/charge/index.wxml-->
+<view class="warpper">
+	<view class="header">
+		<text class="user-nickname font"></text>
+		<text class="user-balance font" bindtap='balanceDetail'>查看明细</text>
+	</view>
+	<view class="user-hear-pic">
+		<image src="{{userInfo.image}}"></image>
+	</view>
+	<view class="flex-container">
+	    <text class="flex-item title font-b">请输入充值金额：</text>
+	    <input class="flex-item input-box" bindinput="bindInput" type='number' />
+	</view>
+	<button bindtap="charge" class="btn-charge font-b">充值</button>
+</view>

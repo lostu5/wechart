@@ -1,0 +1,72 @@
+
+.login-icon{
+  display: flex;
+  justify-content:center ;
+}
+.login-from{
+  padding:0rpx 20rpx;
+}
+.login-icon .login-img{
+  width:152rpx;
+  height: 204rpx;
+  margin:111rpx 0rpx;
+}
+.inputView .nameImage{
+  width:34rpx;
+  height:34rpx;
+  margin-left:20rpx;
+  margin-right:30rpx;
+}
+.inputView .keyImage{
+  width:32rpx;
+  height: 36rpx;
+  margin-left:20rpx;
+  margin-right:30rpx;
+}
+.inputView{
+  border-bottom: 1rpx solid #dcdcdc;
+  height:105rpx;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items:center;
+}
+.inputView .font{
+  color:#6f6f6f;
+  margin-right: 30rpx;
+}
+.font{
+  font-size: 30rpx;
+}
+
+.inputView .loginLab{
+  font-size: 30rpx;
+  flex-wrap: nowrap;
+  width:70rpx;
+}
+.loginBtnView .loginBtn{
+  font-size: 32rpx;
+  width:610rpx;
+  height:80rpx;
+  background-color: #4bd7bd;
+  margin-top:60rpx;
+  margin-bottom: 25rpx;
+  border-radius: 8rpx;
+}
+.loginBtnView .txt-area .forgot-password{
+  color:#a1a1a1;
+}
+.loginBtnView .txt-area .register{
+  color:#4bd7bd;
+}
+.loginBtnView .txt-area{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content:space-between;
+}
+.inputView .inputText{
+  font-size: 30rpx;
+}
+.loginBtnView .txt-area .forgot-password{
+  color:#a1a1a1;
+}

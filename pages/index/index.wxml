@@ -1,0 +1,127 @@
+<view class="container">
+  <scroll-view scroll-y="true" class="page-body" style="height:{{winHeight}}px" bindscrolltolower="loadMore">
+    <!--banner-->
+    <view class="swiper">
+      <swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for-items="{{banner_url}}" wx:key="item.id">
+          <swiper-item>
+            <block wx:if="{{item}}">
+              <image src="{{item}}" mode="aspectFill" />
+            </block>
+            <block wx:else>
+              <image src="../../images/default_pic.png" mode="aspectFill"></image>
+            </block>
+          </swiper-item>
+        </block>
+      </swiper>
+      <!-- <image class='swiper_cov' style=""  src="../../images/bannercover.png"></image>-->
+    </view>
+
+    <!--getTopNavData-->
+    <view class="nav_tops">
+      <block wx:for="{{getTopNavData}}" wx:key="item.id">
+        <view class="nav_top_items" bindtap="switchTopTab" data-index="{{index}}" data-id="{{item.id}}">
+          <view class="section_ctn">
+            <image style="width: 112rpx; height: 112rpx; background-color: #fffff;" mode="{{item.mode}}" src="{{item.icon}}"></image>
+          </view>
+          <text>{{item.title}}</text>
+        </view>
+      </block>
+    </view>
+
+    <!--getmidNavData-->
+    <!--getmidNavData-->
+    <view class="nav_mids">
+      <block wx:for="{{getmidNavData}}" wx:key="item.id">
+        <block wx:if="{{item.id<4}}">
+          <view class="nav_top_items" bindtap="switchMidTab" data-index="{{index}}" data-id="{{item.id}}">
+            <view class="section_ctn">
+              <image style="width: 112rpx; height: 112rpx; background-color: #fffff;" mode="{{item.mode}}" src="{{item.icon}}"></image>
+            </view>
+            <text class='mid_tit'>{{item.title}}</text>
+            <text class='mid_abs'>{{item.abstract}}</text>
+          </view>
+        </block>
+        <block wx:else>
+          <view class="nav_top_items" style='position:relative;' data-index="{{index}}" data-id="{{item.id}}">
+            <button open-type='share'></button>
+            <view class="section_ctn">
+              <image style="width: 112rpx; height: 112rpx; background-color: #fffff;" mode="{{item.mode}}" src="{{item.icon}}"></image>
+            </view>
+            <text class='mid_tit'>{{item.title}}</text>
+            <text class='mid_abs'>{{item.abstract}}</text>
+          </view>
+        </block>
+      </block>
+    </view>
+    <!--navsear-->
+    <view>
+      <view class='tab_lists'>
+        <block wx:for="{{placeitems}}" wx:key="item.id">
+          <view class="nav_tab_items {{selected0==index?'active-tag':''}}" bindtap="tab_lists" data-index="{{index}}" data-id="{{item.id}}">
+            <view class='inner_text'>
+              <text>{{item.value}}</text>
+            </view>
+
+          </view>
+        </block>
+      </view>
+
+
+
+      <view class="nav_section_list">
+        <!--左边list-->
+        <view wx:if="{{selected0==0}}">
+          <!-- 每一个list-->
+          <block wx:for="{{carParkingList}}" wx:key="{{index}}">
+            <view class="nav_section_items" bindtap="navigateCarParkDetail" data-aid="{{item.carParkId}}">
+              <!--content-->
+              <view class="section_list">
+                <image style="" mode="" src="{{item.publishuserimg}}"></image>
+                <view class="section_list_sub">
+                  <text class='listhead'>{{item.carParkName}}</text>
+                  <text class='listabs'>按小时|{{item.afterPrice}}元/小时</text>
+                  <text class='listads'>地址:{{item.carParkAddress}}</text>
+                  <view class='list_location'>
+                    <image style="" mode="" src="../../images/location_ico.png"></image>
+                    <text class='listabs'>{{item.count}}</text>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </block>
+        </view>
+        <!--右边list-->
+        <block wx:if="{{selected0==1}}">
+          <!-- 每一个list-->
+          <block wx:for="{{newPersonParkingList}}" wx:key="{{index}}">
+            <view class="nav_section_items" bindtap="navigateDetail" data-aid="{{item.publishid}}">
+              <!--content-->
+              <view class="section_list">
+                <image style="" mode="" src="{{item.publishuserimg}}"></image>
+                <view class="section_list_sub">
+                  <text class='listhead'>{{item.carParkName}}</text>
+                  <text class='listabs'>按小时|{{item.afterPrice}}元/小时</text>
+                  <text class='listads'>地址:{{item.publishdetailaddress}}</text>
+                  <view class='list_location'>
+                    <image style="" mode="" src="../../images/location_ico.png"></image>
+                    <text class='listabs'></text>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </block>
+        </block>
+      </view>
+
+    </view>
+
+
+    <view class="loading" hidden="{{searchLoading}}">正在载入更多...</view>
+    <view class="loading complete" hidden="{{searchLoadingComplete}}">已加载全部</view>
+
+
+
+
+  </scroll-view>
+</view>

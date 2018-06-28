@@ -1,0 +1,15 @@
+  <view class="ar_coverpath"></view>
+  <view class='container'>
+      <view class='lists'>
+          <view class='list' bindtap='changepsw'>
+             账号密码
+          </view>
+          <view class='list' bindtap='modalcnt'>
+             清理缓存
+          </view>
+          <view class='list' bindtap='set'>
+             退出登录
+          </view>
+      </view>
+
+  </view>

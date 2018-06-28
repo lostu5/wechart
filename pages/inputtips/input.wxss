@@ -1,0 +1,35 @@
+.section{
+  height: 140rpx;
+  width: 100%;
+}
+
+.mapsearch {
+  width: 100%;
+  padding:30rpx 20rpx;
+  box-sizing: border-box;
+}
+.mapsearch .mapsearch-in {
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #fff;
+  border: 1rpx solid #888885;
+  border-radius: 10rpx;
+  font-size: 30rpx;
+  color: #555;
+}
+.mapsearch .mapsearch-in image {
+  width: 44rpx;
+  height: 44rpx;
+  margin:  0 20rpx;
+}
+.mapsearch .mapsearch-in input {
+  width: 600rpx;
+}
+
+.text_box{
+  margin: 10px 25px;
+  border-bottom:1px solid #c3c3c3;
+  padding-bottom:10px
+}

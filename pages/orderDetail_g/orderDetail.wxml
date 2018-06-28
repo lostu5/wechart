@@ -1,0 +1,89 @@
+<view class="container">
+<view class="ar_coverpath">
+  
+</view>
+    <view class="input-list">
+      <view class="input-item-title" >
+         订单编号：{{orderInfo.orderId}}
+      </view>
+      <view class="input-item-full">
+        <view class="input-item-label" >
+            <view class='img'><image mode="aspectFill" src="../../images/pubadd.png"></image></view>
+             <view class='tex'>标题:</view>
+        </view>
+        <view class="input-item-content" style='padding-top:20rpx;line-height:40rpx;'>
+            {{orderInfo.orderAddressName}}
+        </view>
+      </view>
+      <view class="input-item-full">
+        <view class="input-item-label" >
+             <view class='img'><image mode="aspectFill" src="../../images/publoca.png"></image></view>
+             <view class='tex'>详细地址:</view>
+        </view>
+        <view class="input-item-content" style='padding-top:20rpx;line-height:40rpx;'>
+            {{orderInfo.orderDetailAddress}}
+        </view>
+      </view>
+      <view class="input-item-full">
+        <view class="input-item-label" >
+             <view class='img'><image mode="aspectFill" src="../../images/pubmay.png"></image></view>
+             <view class='tex'>订单金额:</view>
+        </view>
+        <view class="input-item-content">
+            {{orderInfo.orderFirstPrice}}
+        </view>
+      </view>
+      <view class="input-item-full">
+        <view class="input-item-label" >
+             <view class='img'><image mode="aspectFill" src="../../images/pubname.png"></image></view>
+             <view class='tex'>发布人:</view>
+        </view>
+        <view class="input-item-content">
+            {{orderInfo.employeeName}}
+        </view>
+      </view>
+      <view class="input-item-full">
+        <view class="input-item-label" >
+            <view class='img'><image mode="aspectFill" src="../../images/punphone.png"></image></view>
+            <view class='tex'>手机号</view>:
+        </view>
+        <view class="input-item-content">
+            {{orderInfo.receiveUserTel}}
+        </view>
+      </view>
+      <view class="input-item-full">
+        <view class="input-item-label" >
+            <view class='img'><image mode="aspectFill" src="../../images/pubcarenum.png"></image></view>
+            <view class='tex'>车牌</view>:
+        </view>
+        <view class="input-item-content">
+            {{orderInfo.carCard}}
+        </view>
+      </view>
+      <view class="input-item-full">
+        <view class="input-item-label" >
+            <view class='img'><image mode="aspectFill" src="../../images/puncolo.png"></image></view>
+            <view class='tex'>颜色</view>:
+        </view>
+        <view class="input-item-content">
+            {{orderInfo.carColor}}
+        </view>
+      </view>
+      <view class="input-item-full">
+        <view class="input-item-label" >
+            <view class='img'><image mode="aspectFill" src="../../images/pubcartype.png"></image></view>
+            <view class='tex'>车型</view>:
+        </view>
+        <view class="input-item-content">
+            {{orderInfo.carType}}
+        </view>
+      </view>
+    </view>
+
+
+
+
+</view>
+<view class='btn-submit'>
+  <button>确认停车</button>
+</view>

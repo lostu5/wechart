@@ -1,0 +1,11 @@
+<view class="section">
+  <view class='mapsearch'>
+    <view  class='mapsearch-in' data-city="{{city}}" data-longitude="{{longitude}}" data-latitude="{{latitude}}" bindtap="bindInput">
+      <image mode="aspectFill" src="../../images/search.png"></image>
+      <input bindinput="bindInput" placeholder="请输入地点" focus="true" />
+    </view>
+  </view>
+</view>
+<view class="sug_info" wx:for="{{sugData}}" wx:key="{{index}}">
+    <view class='text_box' id='place' bindtap='bindSearch' data-open="{{item.data}}">{{item.data.title}}</view>
+</view>

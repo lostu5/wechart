@@ -1,0 +1,6 @@
+<view>
+<view>
+  <text>当前版本:{{version}}</text>
+</view>
+<button bindtap='updateVersion'>版本更新</button>
+</view>

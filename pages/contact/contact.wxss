@@ -1,0 +1,56 @@
+.ar_coverpath{
+    width:100%;
+    margin:0;
+    box-sizing:border-box;
+    height: 30rpx;
+    background-color: #efefef;
+}
+page{
+
+}
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.container .bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.lists {
+  width: 100%;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 30rpx;
+}
+.lists .list {
+  line-height: 90rpx;
+  border-bottom: 1rpx solid #efefef;
+  font-size: 36rpx;
+  width: 100%;
+  float: left;
+}
+.lists .list view {
+  font-size: 30rpx;
+  float: left;
+  width: 140rpx;
+  color: #fff;
+}
+.lists .list text {
+  color: #efefef;
+  padding-left: 10rpx;
+  font-size: 28rpx;
+  line-height: 30rpx;
+}
+.lists .list .address {
+  line-height:40rpx;
+  width:550rpx;
+  padding:25rpx 0;
+
+}

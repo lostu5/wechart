@@ -1,0 +1,167 @@
+<!--order.wxml-->
+
+<view class="container">
+
+ <view class="swiper-tab">  
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">
+    <view data-current="0" bindtap="swichNav">待支付</view></view>  
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">
+    <view data-current="1" bindtap="swichNav">进行中</view></view> 
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">
+    <view data-current="2" bindtap="swichNav">已完成</view></view>  
+    <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">
+    <view data-current="3" bindtap="swichNav">已取消</view></view> 
+</view> 
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 30}}px" bindchange="bindChange">  
+    
+    <swiper-item>  
+    <scroll-view   scroll-y="true"  class="page-body" bindscrolltolower="loadMore" >
+        <!--list-->
+   <view class="nav_section">
+    <view wx:if="{{daizhifuList}}">
+    
+        <block wx:for="{{daizhifuList}}" wx:key="item.publishid">
+            <view class="nav_section_items" bindtap="navigateDetail" data-aid="{{item.orderId}}" data-tid="{{item.orderType}}"> 
+                <!--content-->
+                <view class="section_cont_tit">
+                    订单编号：{{item.orderId}}  
+                    <block wx:if="{{item.orderType==0}}">
+                     <image class='cartype' mode="aspectFill" src="../../images/persion.png"></image>
+                    </block>  
+                    <block wx:else>
+                     <image class='cartype' mode="aspectFill" src="../../images/park.png"></image>
+                    </block>
+                </view>
+                <view class="section_cont" >
+                    <view class='addressname'>{{item.orderAddressName}}
+                      <view class="section_cont_price">
+                        {{orderFirstPrice}}
+                      </view>
+                    </view>   
+                    <view class='address'>地址：{{item.orderDetailAddress}}</view>   
+                    <view class='ordertime'>下单时间： {{item.orderCreateTime}}----{{item.orderFinishTime}}</view>   
+                </view>
+           </view>
+        </block>
+       
+    </view>
+    
+    <view wx:else>暂无数据</view>
+          
+</view>   
+  </scroll-view>
+    </swiper-item>  
+    
+    <swiper-item>  
+    <scroll-view   scroll-y="true"  class="page-body" bindscrolltolower="loadMore" >
+        <!--list-->
+   <view class="nav_section">
+    <view wx:if="{{jinxingList}}">
+        <block wx:for="{{jinxingList}}" wx:key="item.publishid">
+            <view class="nav_section_items" bindtap="navigateDetail" data-aid="{{item.orderId}}" data-tid="{{item.orderType}}"> 
+                <!--content-->
+                <view class="section_cont_tit">
+                    订单编号：{{item.orderId}}    
+                    <block wx:if="{{item.orderType==0}}">
+                     <image class='cartype' mode="aspectFill" src="../../images/persion.png"></image>
+                    </block>  
+                    <block wx:else>
+                     <image class='cartype' mode="aspectFill" src="../../images/park.png"></image>
+                    </block>
+                </view>
+                <view class="section_cont" >
+                    <view class='addressname'>{{item.orderAddressName}}
+                      <view class="section_cont_price">
+                        {{orderFirstPrice}}
+                      </view>
+                    </view>   
+                    <view class='address'>地址：{{item.orderDetailAddress}}</view>   
+                    <view class='ordertime'>下单时间： {{item.orderCreateTime}}----{{item.orderFinishTime}}</view>   
+                </view>
+           </view>
+        </block>
+    </view>
+    
+    <view wx:else>暂无数据</view>
+          
+    </view>   
+</scroll-view>
+    </swiper-item>  
+    
+    <swiper-item>  
+    <scroll-view   scroll-y="true"  class="page-body" bindscrolltolower="loadMore" >
+        <!--list-->
+   <view class="nav_section">
+    <view wx:if="{{wanchengList}}">
+        <block wx:for="{{wanchengList}}" wx:key="item.publishid">
+            <view class="nav_section_items" bindtap="navigateDetail" data-aid="{{item.orderId}}" data-tid="{{item.orderType}}"> 
+                <!--content-->
+                <view class="section_cont_tit">
+                    订单编号：{{item.orderId}}    
+                    <block wx:if="{{item.orderType==0}}">
+                     <image class='cartype' mode="aspectFill" src="../../images/persion.png"></image>
+                    </block>  
+                    <block wx:else>
+                     <image class='cartype' mode="aspectFill" src="../../images/park.png"></image>
+                    </block>
+                </view>
+                <view class="section_cont" >
+                    <view class='addressname'>{{item.orderAddressName}}
+                      <view class="section_cont_price">
+                        {{orderFirstPrice}}
+                      </view>
+                    </view>   
+                    <view class='address'>地址：{{item.orderDetailAddress}}</view>   
+                    <view class='ordertime'>下单时间： {{item.orderCreateTime}}----{{item.orderFinishTime}}</view>   
+                </view>
+           </view>
+        </block>
+    </view>
+    
+    <view wx:else>暂无数据</view>
+          
+</view> 
+</scroll-view>
+    </swiper-item>
+
+    <swiper-item>  
+    <scroll-view   scroll-y="true"  class="page-body" bindscrolltolower="loadMore" >
+        <!--list-->
+   <view class="nav_section">
+    <view wx:if="{{quxiaoList}}">
+        <block wx:for="{{quxiaoList}}" wx:key="item.publishid">
+            <view class="nav_section_items" bindtap="navigateDetail" data-aid="{{item.orderId}}" data-tid="{{item.orderType}}"> 
+                <!--content-->
+                <view class="section_cont_tit">
+                    订单编号：{{item.orderId}}  
+                     <image class='cartype' mode="aspectFill" src="../../images/persion.png"></image>
+                </view>
+                <view class="section_cont" >
+                    <view class='addressname'>{{item.orderAddressName}}
+                      <view class="section_cont_price">
+                        {{orderFirstPrice}}
+                      </view>
+                    </view>   
+                    <view class='address'>地址：{{item.orderDetailAddress}}</view>   
+                    <view class='ordertime'>下单时间： {{item.orderCreateTime}}----{{item.orderFinishTime}}</view>   
+                </view>
+           </view>
+        </block>
+    </view>
+    
+    <view wx:else>暂无数据</view>
+          
+</view> 
+</scroll-view>
+    </swiper-item>  
+</swiper> 
+ 
+
+
+
+
+
+
+
+
+</view>

@@ -1,0 +1,15 @@
+<view class="container">
+<view class="ar_coverpath">
+   <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="18" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>
+</view>
+<view class="ar_cont">
+    <text class="ar_cont_h1">订单编号:"{{order.orderId}}"</text>
+    <text class="ar_cont_h1">地址:"{{order.orderDetailAddress}}"</text>
+    <text class="ar_cont_h1">价格:"{{order.orderShowPrice}}"</text>
+    <view class="ar_line"></view>
+    
+   
+    <button class="ar_book" bindtap="pay">确认支付</button>
+</view>
+
+</view>

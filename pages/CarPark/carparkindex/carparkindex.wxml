@@ -1,0 +1,19 @@
+<view>
+<button bindtap="addpublishinfo"> 发布车位信息 </button>
+<button bindtap="addchargerule"> 设置收费规则 </button>
+</view>
+<view class='container'>
+  <!-- 车辆信息列表 -->
+  <block wx:for-items="{{publishinfo}}" wx:for-index="index" wx:key="{{item.carparkpublishid}}">
+    <view class='card  b-shadow' bindtap='toggleBtn' id="{{item.carparkpublishid}}">
+      <view class='nearCard-fr' style='height:200rpx;'>
+        <view style="width:60%;float:left;">剩余车位：
+          <text class='c-green'>{{item.parkingcount}}</text>
+        </view>
+        
+        <icon bindtap='updatepublishinfo' style='margin-top:50rpx;margin-left:100rpx;' type="info" data-aid="{{item.carparkpublishid}}"  size="40"/>
+         <icon bindtap='deletepublishinfo' style='margin-top:10rpx;margin-left:100rpx;' type="cancel" data-aid="{{item.carparkpublishid}}"  size="20"/>
+      </view>                                                                                 
+    </view>
+  </block>
+</view>

@@ -1,0 +1,133 @@
+.lf{  
+    float: left;  
+}  
+.rt{  
+    float: right;  
+}  
+.tel{  
+    border-bottom: 2rpx solid #ddd;  
+    height: 100rpx;  
+    line-height:100rpx;  
+}  
+.chepai{  
+    height: 60rpx;  
+    line-height:60rpx;  
+}  
+.provinces{  
+    overflow: hidden;  
+    background-color: #CED3D9;  
+    padding:30rpx 0;  
+    position: absolute;  
+    bottom: 0;  
+    left: 0;  
+    z-index: 10000;  
+}  
+.pro_li{  
+    font-size: 36rpx;  
+    height: 70rpx;  
+    width: 70rpx;  
+    line-height: 70rpx;  
+    text-align: center;  
+    border: 2rpx solid #ddd;  
+    margin: 5rpx;  
+    background-color:#fff;   
+}  
+.pro_close{  
+    width: 100rpx;  
+    height: 70rpx;  
+    line-height: 70rpx;  
+    font-size: 32rpx;  
+    text-align: center;  
+    background-color: #fff;  
+    border: 2rpx solid #ddd;  
+    margin: 5rpx ;  
+}  
+.pro_del{  
+    width: 100rpx;  
+    height: 70rpx;  
+    line-height: 70rpx;  
+    font-size: 32rpx;  
+    text-align: center;  
+    background-color: #fff;  
+    border: 2rpx solid #ddd;  
+    margin: 5rpx;  
+}  
+.keyNums{  
+    overflow: hidden;  
+    background-color: #CED3D9;  
+    padding:30rpx 0;  
+    position: absolute;  
+    bottom: 0;  
+    left: 0;  
+    z-index: 10000;  
+}  
+.pro_ok{  
+    width: 100rpx;  
+    height: 70rpx;  
+    line-height: 70rpx;  
+    font-size: 32rpx;  
+    text-align: center;  
+    background-color: #fff;  
+    border: 2rpx solid #ddd;  
+    margin: 5rpx ;  
+    /* margin-left: 35%; */  
+}  
+.pro_d{  
+    width: 100rpx;  
+    height: 70rpx;  
+    line-height: 70rpx;  
+    font-size: 32rpx;  
+    text-align: center;  
+    background-color: #fff;  
+    border: 2rpx solid #ddd;  
+    margin: 5rpx;  
+} 
+.section {
+  height: 30rpx;
+  width: 100%;
+  background-color: #efefef;
+}
+.care-con {
+  padding: 0 47rpx;
+}
+.care-list {
+  display: flex;
+  align-items: center;
+  height: 116rpx;
+  border-bottom: 1rpx solid #dcdcdc;
+}
+.care-list image {
+  width: 40rpx;
+  height: 78rpx;
+  margin: 0 30rpx 0 20rpx;
+  vertical-align: top;
+}
+.care-list .care-tit {
+  width: 160rpx;
+  height: 78rpx;
+  text-align: justify;
+  font-size: 30rpx;
+  line-height: 78rpx;
+}
+.care-list .care-tit::after {
+    content: " ";
+    display: inline-block;
+    width: 100%;
+}
+.care-list input {
+  border: 1px solid #bfbfbf;
+  margin: 0 30rpx;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+  font-size: 30rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  width:360rpx; 
+}
+form button {
+  margin-top: 80rpx;
+  background-color: #4bd7bd;
+  border: none;
+  color: #fff;
+  font-size: 32rpx;
+}

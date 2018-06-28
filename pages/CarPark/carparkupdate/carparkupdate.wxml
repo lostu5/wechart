@@ -1,0 +1,11 @@
+<view class="section">
+<block wx:for-items="{{publishinfo}}">
+<form bindsubmit='updatepublishInfo'>
+<view hidden="true"><input name="carparkid" value='{{carparkId}}'> </input></view>
+  使用<input name="Carparkpublishstate" value='{{item.carparkpublishstate}}' placeholder="请输入纬度"  />
+  删除<input name="Logicstate" value='{{item.logicstate}}' placeholder="请输入经度"  />
+  车位数<input name="parkingcount" value='{{item.parkingcount}}' placeholder="请输入车位数"  />
+  <button form-type='submit'>修改</button>
+  </form>
+  </block>
+</view>

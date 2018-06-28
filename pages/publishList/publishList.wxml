@@ -1,0 +1,157 @@
+<!--publishList.wxml-->
+
+<view class="container">
+<!--<button bindtap="addPublish">新增车位信息</button>-->
+<view class="swiper-tab">  
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}">
+    <text data-current="0" data-currentText="已发布" bindtap="swichNav">已发布</text></view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}">
+    <text data-current="1" data-currentText="已完成" bindtap="swichNav">已完成</text><view class='midd'></view></view> 
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}">
+    <text data-current="2" data-currentText="已失效" bindtap="swichNav">已失效</text><view class='midd'></view></view>  
+    <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}">
+    <text data-current="3" data-currentText="草稿箱" bindtap="swichNav">草稿箱</text>  <view class='midd'></view></view>
+</view>  
+
+ 
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight-65}}px" bindchange="bindChange">  
+
+    <swiper-item>  
+      <scroll-view  style="height:{{winHeight-65}}px;background-color: #fff;" scroll-y="true"  class="page-body" bindscrolltolower="loadMore">
+      <!--list-->
+   <view class="nav_section" style="min-height:500px;">
+    <view wx:if="{{fabuList.length>0}}">
+        <block wx:for="{{fabuList}}" wx:key="item.publishid">
+            <view class="nav_section_items" bindtap="navigateDetail" data-arid="{{item.publishid}}">
+                <!--content-->
+                <view class="section_cont" >
+                    <view class="section_cont_price">
+                        <text>￥{{item.publishprice}}</text>  
+                        <block wx:if="{{item.receivestatus==0}}">
+                        <view class='flag green'>待接取</view>
+                        </block>
+                        <block wx:else>
+                        <view class='flag yellow'>已接取</view>
+                        </block>
+                    </view>
+                    <text class='title title_b'>车牌号：{{item.publishcarcard}}</text>
+                    <view class='title'>位置：{{item.publishdetailaddress}}</view>
+                    <view class='title'>备注：{{item.publishremark}}</view>
+                    <view class="section_cont_sub">
+                        <text>发布时间：{{item.publishcreatetime}}</text>   
+                    </view> 
+                </view>
+           </view>
+        </block>
+    </view>
+    <view wx:else class='nolist'>暂无数据</view>
+          
+    </view> 
+    </scroll-view>
+    </swiper-item>       
+    <swiper-item>  
+     <scroll-view scroll-y="true" style="height:{{winHeight-65}}px;background-color: #fff;"  class="page-body" bindscrolltolower="loadMore">
+      <!--list-->
+   <view class="nav_section">
+    <view wx:if="{{wanchengList.length>0}}">
+        <block wx:for="{{wanchengList}}" wx:key="item.publishid">
+            <view class="nav_section_items" bindtap="navigateDetail" data-arid="{{item.publishid}}">
+                <!--content-->
+                <view class="section_cont" >
+                    <view class="section_cont_price">
+                        <text>￥{{item.publishprice}}</text>  
+                        <block wx:if="{{item.receivestatus==0}}">
+                        <view class='flag green'>待接取</view>
+                        </block>
+                        <block wx:else>
+                        <view class='flag yellow'>已接取</view>
+                        </block>
+                    </view>
+                    <text class='title title_b'>车牌号：{{item.publishcarcard}}</text>
+                    <view class='title'>位置：{{item.publishdetailaddress}}</view>
+                    <view class='title'>备注：{{item.publishremark}}</view>
+                    <view class="section_cont_sub">
+                        <text>发布时间：{{item.publishcreatetime}}</text>   
+                    </view> 
+                </view>
+           </view>
+        </block>
+    </view>
+    <view wx:else class='nolist'>暂无数据</view>
+    </view>  
+     </scroll-view>
+    </swiper-item>  
+     
+    <swiper-item>  
+     <scroll-view scroll-y="true" style="height:{{winHeight-65}}px;background-color: #fff;"  class="page-body" bindscrolltolower="loadMore">
+      <!--list-->
+   <view class="nav_section">
+    <view wx:if="{{shixiaoList.length>0}}">
+        <block wx:for="{{shixiaoList}}" wx:key="item.publishid">
+            <view class="nav_section_items" bindtap="navigateDetail" data-arid="{{item.publishid}}">
+                <!--content-->
+                <view class="section_cont" >
+                    <view class="section_cont_price">
+                        <text>￥{{item.publishprice}}</text>  
+                        <block wx:if="{{item.receivestatus==0}}">
+                        <view class='flag green'>待接取</view>
+                        </block>
+                        <block wx:else>
+                        <view class='flag yellow'>已接取</view>
+                        </block>
+                    </view>
+                    <text class='title title_b'>车牌号：{{item.publishcarcard}}</text>
+                    <view class='title'>位置：{{item.publishdetailaddress}}</view>
+                    <view class='title'>备注：{{item.publishremark}}</view>
+                    <view class="section_cont_sub">
+                        <text>发布时间：{{item.publishcreatetime}}</text>   
+                    </view> 
+                </view>
+           </view>
+        </block>
+    </view>
+      <view wx:else class='nolist'>暂无数据
+      </view>
+          
+    </view> 
+     </scroll-view>
+    </swiper-item>
+
+    <swiper-item>  
+     <scroll-view scroll-y="true" style="height:{{winHeight-65}}px;background-color: #fff;"  class="page-body" bindscrolltolower="loadMore">
+      <!--list-->
+   <view class="nav_section">
+    <view wx:if="{{caogaoList.length>0}}">
+        <block wx:for="{{caogaoList}}" wx:key="item.publishid">
+            <view class="nav_section_items" bindtap="navigateDetail" data-arid="{{item.publishid}}">
+                <!--content-->
+                <view class="section_cont" >
+                    <view class="section_cont_price">
+                        <text>￥{{item.publishprice}}</text>  
+                        <block wx:if="{{item.receivestatus==0}}">
+                        <view class='flag green'>待接取</view>
+                        </block>
+                        <block wx:else>
+                        <view class='flag yellow'>已接取</view>
+                        </block>
+                    </view>
+                    <text class='title title_b'>车牌号：{{item.publishcarcard}}</text>
+                    <view class='title'>位置：{{item.publishdetailaddress}}</view>
+                    <view class='title'>备注：{{item.publishremark}}</view>
+                    <view class="section_cont_sub">
+                        <text>发布时间：{{item.publishcreatetime}}</text>   
+                    </view> 
+                </view>
+           </view>
+        </block>
+    </view>
+    <view wx:else class='nolist'>暂无数据</view>
+    </view>  
+    </scroll-view>
+    </swiper-item>  
+</swiper>  
+
+<view bindtap='addPublish' class='addPub'>
+   <image style="width: 102rpx; height: 102rpx;" mode="aspectFill" src="../../images/newpub.png"></image>
+</view>
+</view>

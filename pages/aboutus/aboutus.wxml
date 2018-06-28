@@ -1,0 +1,13 @@
+<view class="ar_coverpath"></view>
+<view class='container'>
+  <!--<view class='list' bindtap='sysmess'>
+  系统维护
+  </view>-->
+  <view class='list' bindtap='advise'>
+  投诉建议
+  </view>
+  <view class='list' bindtap='contact'>
+  联系我们
+  </view>
+
+</view>

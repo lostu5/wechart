@@ -1,0 +1,83 @@
+<view class="container">
+  <view  class='parking-banner'>
+   <swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for-items="{{banner_url}}" wx:key="item.id">
+          <swiper-item>
+            <block wx:if="{{item}}">
+              <image src="{{item}}" mode="aspectFill" />
+            </block>
+            <block wx:else>
+              <image src="../../images/default_pic.png" mode="aspectFill"></image>
+            </block>
+          </swiper-item>
+        </block>
+    </swiper>
+  </view>
+  
+  <view class='banner-b'></view>
+  <view class="input-list">
+    <view class="input-item-title" >
+      秦新自由港停车场
+    </view>
+    <view class="input-item-full">
+      <view class="input-item-label" >
+          <image mode="aspectFill" src="../../images/publoca.png"></image>地址
+      </view>
+      <view class="input-item-content">
+          {{publishInfo.publishdetailaddress}}
+      </view>
+    </view>
+    <view class="input-item">
+      <view class="input-item-label" >
+          <image mode="aspectFill" src="../../images/pubtime.png"></image>时段
+      </view>
+      <view class="input-item-content">
+          {{publishInfo.publishusername}}
+      </view>
+    </view>
+    <view class="input-item">
+      <view class="input-item-label" >
+          <image mode="aspectFill" src="../../images/pubmay.png"></image>收费
+      </view>
+      <view class="input-item-content">
+          {{publishInfo.publishusername}}
+      </view>
+    </view>
+    <view class="input-item">
+      <view class="input-item-label" >
+          <image mode="aspectFill" src="../../images/punphone.png"></image>电话
+      </view>
+      <view class="input-item-content">
+          {{publishInfo.publishusername}}
+      </view>
+    </view>
+    <view class="input-item-full">
+      <view class="input-item-label" >
+          <image mode="aspectFill" src="../../images/pubabs.png"></image>备注
+      </view>
+      <view class="input-item-content">
+          {{publishInfo.publishdetailaddress}}
+      </view>
+    </view>
+  </view>
+  <image bindtap="goToPlace" class='gomap' mode="aspectFill" src="../../images/gomap.png"></image>
+
+
+
+
+  <view class="ar_cont">
+    <view>
+      <text>停车场名称:{{carParkName}}</text>
+    </view>
+    <view>
+      <text>地址:{{address}}</text>
+    </view>
+    <block wx:for="{{carPark}}" wx:key="item.chargeruleid">
+      <view>
+        <text>时间段:{{item.chargetime}}</text>
+        <text>收费标准:{{item.perhourmoney}}元</text>
+      </view>
+    </block>
+  </view>
+  <button bindtap="goToPlace">导航过去</button>
+</view>

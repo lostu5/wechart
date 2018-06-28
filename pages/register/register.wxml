@@ -1,0 +1,61 @@
+<view class="container-big" style="height: {{windowHeight}}px">  
+    <!--第一步-->  
+    <view wx:if="{{step == 1}}" id="firstStep_Pad">  
+        <view class="container">
+            <view class="login-icon">  
+                <image class="login-img" src="../../images/logo.png" mode='aspectFill'></image>  
+            </view> 
+            <view class="inputView">  
+                <image class="country-icon icon" src="../../images/country.png"></image>  
+                <text class="country font">国家/地区</text>   
+                <text class="selector-country font">{{location}}</text>  
+            </view>        
+            <view class="inputView">  
+                <image class="tel-icon icon" src="../../images/tel.png"></image>
+                <input id="input_phoneNum" bindinput="input_phoneNum" class="font" placeholder="请输入电话号码" type="number"/>  
+            </view> 
+            <button type="primary" size="default" bindtap="nextStep" class="nextBtn">下一步</button> 
+        </view> 
+         
+    </view>  
+      
+    <!--第二步-->  
+    <view wx:if="{{step==2}}" id="secondStep_Pad">  
+        <view class="container">
+            <view class="login-icon">  
+                <image class="login-img" src="../../images/logo.png" mode='aspectFill'></image>  
+            </view>
+            <view class="inputView">  
+                <image class="ver-icon" src="../../images/ver.png"></image>  
+                <input bindinput="input_identifyCode" placeholder="请输入验证码" type="number" class="font ver-font"/>  
+                <text class="verTime" disabled="{{disabled}}" bindtap="sendmessg" size="mini" >{{getmsg}}</text>
+            </view> 
+            <button type="primary" size="default" bindtap="nextStep" class="nextBtn">下一步</button>
+            <text class="no-ver font">验证码已经发送到您的手机如长时间没有收到，请点击“重新获取”</text>    
+        </view>
+    </view>  
+  
+    <!--第三步-->  
+    <view wx:if="{{step==3}}" id="thirdStep_Pad"> 
+         <view class="container">
+            <view class="login-icon">  
+                <image class="login-img" src="../../images/logo.png" mode='aspectFill'></image>  
+            </view>
+             <view class="inputView">  
+                <image class="user-name icon" src="../../images/user-name.png"></image>  
+                <input type="text" placeholder="请输入账号"  class="inputText"  bindinput="input_user"/>  
+            </view>
+            <view class="inputView">  
+                <image class="user-key icon" src="../../images/user-key.png"></image>  
+                <input type="password" placeholder="请输入密码"  class="inputText"  bindinput="input_password"/>  
+            </view>
+            <view class="inputView">  
+                <image class="repeat-key icon" src="../../images/repeat-key.png"></image>  
+                <input type="password" placeholder="请再次输入密码"  class="inputText"  bindinput="input_rePassword"/>  
+            </view>
+            <button type="primary" size="default" bindtap="nextStep" class="nextBtn">下一步</button>
+         </view>      
+    </view>  
+  
+      
+</view> 

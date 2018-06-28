@@ -1,0 +1,25 @@
+  <view class="ar_coverpath"></view>
+  <view class='container'>
+    <view class='lists'>
+      <view class='list'>
+        <view class='list-l'>
+          <view class='title'>快停停车6.6.13账号维护</view>
+          <view class='tip'>06月30日</view>
+        </view>
+        <!--
+        <view class='list-r'>
+           <image  mode="aspectFill" src="../../images/user-list-in.png"></image>
+        </view>-->
+      </view>
+      <view class='list'>
+        <view class='list-l'>
+          <view class='title'>快停停车6.6.13账号维护</view>
+          <view class='tip'>06月30日</view>
+        </view>
+        <!--
+        <view class='list-r'>
+           <image  mode="aspectFill" src="../../images/user-list-in.png"></image>
+        </view>-->
+      </view>
+    </view>
+  </view>

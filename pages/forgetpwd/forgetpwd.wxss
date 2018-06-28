@@ -1,0 +1,102 @@
+
+/*firstStep_Pad*/
+.login-icon{
+  display: flex;
+  justify-content:center ;
+}
+.login-from{
+  padding:0rpx 20rpx;
+}
+.login-icon .login-img{
+  width:152rpx;
+  height: 204rpx;
+  margin:111rpx 0rpx;
+}
+.container{
+	padding:0rpx 20rpx;
+}
+#firstStep_Pad .font{
+	font-size: 30rpx;
+	color:#6f6f6f;
+}
+#firstStep_Pad .selector-country{
+	color:#444;
+	margin-left: 55%;
+}
+.inputView .icon{
+	margin-left:16rpx;
+	margin-right: 32rpx;
+}
+.inputView .country-icon{
+	width:36rpx;
+	height:36rpx;
+}
+.inputView .tel-icon{
+	width:36rpx;
+	height:26rpx;
+}
+.inputView{
+	height:105rpx;
+	display: flex;
+	align-items:center;
+	border-bottom: 1rpx solid #dcdcdc; 
+}
+.nextBtn{
+	border-radius: 8rpx;
+	width:710rpx;
+	height:80rpx;
+	background-color: #4bd7bd!important;
+	font-size: 32rpx;
+	margin-top:60rpx;
+}
+/*firstStep_Pad  end*/
+
+/*secondStep_Pad*/
+#secondStep_Pad .ver-icon{
+	width:36rpx;
+	height:26rpx;
+	margin-left:16rpx;
+	margin-right: 32rpx;
+}
+#secondStep_Pad .font{
+	font-size: 30rpx;
+}
+.verTime{
+	color:black;
+	background-color: #efefef;
+	height: 60rpx;
+	width:260rpx;
+	text-align: center;
+	line-height: 60rpx;
+	border-radius: 8rpx;
+}
+.no-ver{
+	color:#a1a1a1;
+	width:70%;
+	margin:0 auto;
+}
+#secondStep_Pad .nextBtn{
+	margin-bottom:60rpx;
+}
+/*secondStep_Pad end*/
+
+/*thirdStep_Pad*/
+#thirdStep_Pad .user-name{
+	width:34rpx;
+	height:34rpx;
+}
+#thirdStep_Pad .user-key,#thirdStep_Pad .repeat-key{
+	width:34rpx;
+	height:36rpx;
+}
+#thirdStep_Padv .icon{
+	margin-left:16rpx;
+	margin-right: 32rpx;
+}
+#thirdStep_Pad .inputText{
+	font-size: 30rpx;
+}
+/*thirdStep_Pad end*/
+
+
+

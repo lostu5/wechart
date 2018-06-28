@@ -1,0 +1,71 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/book/book",
+    "pages/technician/technician",
+    "pages/technicain_detail/technicain_detail",
+    "pages/edit_addr/edit_addr",
+    "pages/user/user",
+    "pages/publish/publish",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/order/order",
+    "pages/orderChoose/order",
+    "pages/orderDetail/orderDetail",
+    "pages/orderDetail_g/orderDetail",
+    "pages/publishList/publishList",
+    "pages/createOrder/createOrder",
+    "pages/grabParking/grabParking",
+    "pages/forgetpwd/forgetpwd",
+    "pages/set/set" ,
+    "pages/recharge/recharge",
+    "pages/updateManager/updateManager",
+    "pages/updatePublish/updatePublish",
+    "pages/balanceDetail/balanceDetail",
+    "pages/carInfo/carInfo",
+    "pages/addcarInfo/addcarInfo",
+    "pages/updatecarInfo/updatecarInfo",
+    "pages/inputtips/input",
+    "pages/carParkingDetail/carParkingDetail",
+    "pages/movecar/movecar",
+    "pages/help/help",
+    "pages/aboutus/aboutus",
+    "pages/sysmess/sysmess",
+    "pages/advise/advise",
+    "pages/contact/contact",
+    "pages/changepsw/changepsw"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#37383c",
+    "navigationBarTitleText": "共享时刻",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#d24a58",
+    "backgroundColor": "#f6f6f7",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/index_icon_HL.png",
+        "selectedIconPath": "images/index_icon_HL.png"
+      },
+      {
+        "pagePath": "pages/orderChoose/order",
+        "text": "订单",
+        "iconPath": "images/order_icon_HL.png",
+        "selectedIconPath": "images/order_icon_HL.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "images/user_icon_HL.png",
+        "selectedIconPath": "images/user_icon_HL.png"
+      }
+    ]
+  }
+}

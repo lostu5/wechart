@@ -1,0 +1,139 @@
+.container{
+    background:#fff;
+}
+.ar_coverpath{
+    width:100%;
+    margin:0;
+    box-sizing:border-box;
+}
+.ar_coverpath image{
+    width:100%;
+    height:390rpx;
+}
+.ar_cont{
+    padding:0rpx 60rpx;
+    font-size:30rpx;
+    background: #fff;
+    margin-bottom:40rpx;
+    line-height: 45rpx;
+    color:#666666;
+}
+.ar_cont .ar_cont_h1,
+.ar_cont .ar_cont_price{
+    font-size: 32rpx;
+    font-weight: 600;
+    line-height: 64rpx;
+    color:#000;
+}
+.ar_cont .ar_cont_price{
+    color: #e64340;
+    margin-left:60rpx;
+}
+.ar_line{
+    width:100%;
+    height:1rpx;
+    content: '';
+    background: #ddd;
+    margin:30rpx 0rpx;
+}
+.ar_book{
+    background:#d24a58;
+    font-size: 32rpx;
+    color:#fff;
+    border-radius: 0rpx;
+    margin:40rpx 0rpx 10rpx;
+}
+
+
+.input-list{
+	padding: 0;
+	background: #fff;
+}
+.input-list .input-item{
+  height: 115rpx;
+	display: flex;
+	font-size: 36rpx;
+	border-bottom: 1rpx solid #dcdcdc;
+  box-sizing: border-box;
+  align-items: center;
+  padding-left: 20rpx;
+}
+.input-list .input-item-title {
+  font-size: 34rpx;
+  padding: 0 40rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1rpx solid #dcdcdc;
+}
+.input-list .input-item:first-child{
+	border-top: 0;
+}
+.input-item-label{
+	width: 250rpx;
+  height: 80rpx;
+	color: #444;
+  display:flex;
+  align-items:center;
+  margin-right: 20rpx;
+  font-size: 30rpx;
+}
+.input-item-label view {
+  text-align:justify;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.input-item-label view:after{
+            content: '';
+            width: 48px;
+            display: inline-block;
+            text-align: justify;
+}
+.input-item-label .img {
+  text-align: center;
+}
+.input-item-label .tex {
+  width: 200rpx
+}
+.input-item-label image {
+  width: 44rpx;
+  height: 80rpx;
+  margin: 0 10rpx 0 10rpx;
+  vertical-align: top；
+}
+.input-item-content{
+	color: #444;
+	flex:1;
+  float:left;
+  width: 536rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+}
+.input-list .input-item-full {
+display: flex;
+border-bottom: 1rpx solid #dcdcdc;
+min-height: 115rpx;
+box-sizing: border-box;
+padding:15rpx 0rpx;
+margin: 0 20rpx;
+}
+.input-list .input-item-full .input-item-label {
+  float: left;
+}
+.input-list .input-item-full .input-item-content {
+  line-height: 80rpx;
+}
+.btn-submit {
+  padding: 0 20rpx;
+  position: fixed;
+  bottom: 20rpx;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.btn-submit button{
+  height: 80rpx;
+  color: #fff;
+  background-color: #4bd7bd;
+  border-radius: 10rpx;
+  font-size: 32rpx;
+}

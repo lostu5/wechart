@@ -1,0 +1,108 @@
+/*banner*/
+.banner{
+    height:347rpx;
+    width:750rpx;
+    background-size: cover;
+}
+.banner .banner-bg{
+    height:347rpx;
+    width:750rpx;
+    position: relative;
+}
+.banner-top .sign-in{
+    font-size: 30rpx;
+    position: absolute;
+    top:260rpx;
+    left:50%;
+    color:#fff;
+    width:150rpx;
+    text-align: center;
+    margin-left: -75rpx;
+}
+.banner-top .btn-two{
+    position: absolute;
+    top:260rpx;
+    left:50%;
+    margin-left: -75rpx;
+    width:150rpx;
+    opacity: 0;
+}
+.banner-top .banner-user{
+    width:180rpx;
+    height:180rpx;
+    position: absolute;
+    top:52rpx;
+    left:285rpx;
+}
+.banner-user-head{
+    width:180rpx;
+    height:180rpx;
+    border-radius:50%;
+}
+.banner-top .btn-one{
+    width:180rpx;
+    height:180rpx;
+    position: absolute;
+    top:52rpx;
+    left:285rpx;
+    opacity: 0;
+}
+.banner-top .balance{
+    font-size: 30rpx;
+    position: absolute;
+    top:260rpx;
+    left:50%;
+    color:#fff;
+    width:300rpx;
+    text-align: center;
+    margin-left: -150rpx;
+}
+.banner{
+    display: flex;
+    justify-content:center;  
+}
+
+
+
+/*user-list*/
+.user-list{
+    background-color: #efefef;
+    width:750rpx;
+}
+.user-list-m{
+    background-color: #fff;
+    padding: 0 40rpx;
+}
+.user-list-one{
+    margin-top: 30rpx;
+}
+.user-list-two,.user-list-three{
+    margin-top: 20rpx;
+}
+.user-list-three{
+    margin-bottom:70rpx;
+}
+.one-sub{
+    display:flex;
+    height:88rpx;
+    border-bottom:1rpx solid #efefef;
+    align-items:center ;
+}
+.one-sub:last-of-type{
+    border-bottom: none;
+}
+.one-sub .one-left{
+    width:37rpx;
+    height:35rpx;
+}
+.one-sub text{
+    width:300rpx;
+    font-size: 30rpx;
+    margin-left:28rpx;
+    margin-right:280rpx;
+}
+.one-sub .one-right{
+    width:10rpx;
+    height:20rpx;
+}
+

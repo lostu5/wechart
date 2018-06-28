@@ -1,0 +1,36 @@
+<view>
+  <block wx:for="{{recharge}}" wx:key="item.rechargeID">
+    <view class='list'>
+      <block wx:if="{{item.rechargeType==0}}">
+        <text class='list_tit'>充值</text>
+        <text class='list_abs'>订单编号：{{item.rechargeID}} </text>
+        <text class='list_time'>交易时间：{{item.rechargeTime}}</text>
+        <view class='list_right'>
+          <text class='list_num' style='color:#03fa03;'>+{{item.rechargeMoney}}</text> 
+          <block wx:if="{{item.rechargeStatus==0}}">
+            <image class='list_succ' mode="aspectFill" src="../../images/success.png"></image>
+          </block>
+          <block wx:else>
+            <image class='list_succ' mode="aspectFill" src="../../images/fail.png"></image>
+          </block>
+        </view>
+      </block>
+      <block wx:else>
+        <text class='list_tit'>提现</text>
+        <text class='list_abs'>订单编号：{{item.rechargeID}} </text>
+        <text class='list_time'>交易时间：{{item.rechargeTime}}</text>
+        <view class='list_right'>
+          <text class='list_num'>-{{item.rechargeMoney}}</text> 
+          <block wx:if="{{item.rechargeStatus==0}}">
+            <image class='list_succ' mode="aspectFill" src="../../images/success.png"></image>
+          </block>
+          <block wx:else>
+            <image class='list_succ' mode="aspectFill" src="../../images/fail.png"></image>
+          </block>
+        </view>
+      </block>
+
+    </view>
+  </block>
+
+</view>

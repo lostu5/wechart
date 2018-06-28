@@ -1,0 +1,50 @@
+<view class="container">
+  
+</view>
+<view class='camer'>
+    <image style="width: 640rpx; height: 360rpx;" mode="aspectFill" src="../../images/banner02.jpg"></image>
+   <image class='topimg' style="width: 640rpx; height: 360rpx;" mode="aspectFill" src="../../images/movecar.png"></image>
+</view>
+<view class='mytips'>请对准车牌号，点击屏幕确定
+</view>
+<view class='carcard'>
+  <view class="table">
+
+    <view class="tr">
+      <view class='tdtit'>车牌</view>
+      <view class="td"><input style='text'>黑</input></view>
+      <view class="td"><input style='text'>C</input></view>
+      <view class="td "><input style='text'>R</input></view>
+      <view class="td "><input style='text'>2</input></view>
+      <view class="td "><input style='text'>2</input></view>
+      <view class="td "><input style='text'>2</input></view>
+      <view class="td "><input style='text'>2</input></view>
+    </view>
+  </view>
+</view>
+<view class='btn-submit'>
+  <view class='btn-t'>
+    <block wx:if="{{list}}">
+    <view class='searche'>无结果</view>
+    </block>
+    <block wx:else>
+    <view class="input-item">
+					<view class="input-item-label" >
+            <image mode="aspectFill" src="../../images/pubname.png"></image>姓名
+          </view>
+					<view class="input-item-content">
+						<text>张三</text>
+					</view>
+    </view>
+    <view class="input-item">
+					<view class="input-item-label" >
+            <image mode="aspectFill" src="../../images/punphone.png"></image>电话
+          </view>
+					<view class="input-item-content">
+						<text>17712121212</text>
+					</view>
+    </view>
+    </block>
+  </view>
+  <button>查询</button>
+</view>

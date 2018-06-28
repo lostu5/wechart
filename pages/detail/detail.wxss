@@ -1,0 +1,113 @@
+.container{
+    background:#fff;
+}
+.ar_coverpath{
+    width:100%;
+    margin:0;
+    box-sizing:border-box;
+    padding:0 20rpx 20rpx;
+}
+.ar_coverpath image{
+    width:100%;
+    height:390rpx;
+}
+.ar_cont{
+    padding:0rpx 60rpx;
+    font-size:30rpx;
+    background: #fff;
+    margin-bottom:40rpx;
+    line-height: 45rpx;
+    color:#666666;
+}
+.ar_cont .ar_cont_h1,
+.ar_cont .ar_cont_price{
+    font-size: 32rpx;
+    font-weight: 600;
+    line-height: 64rpx;
+    color:#000;
+}
+.ar_cont .ar_cont_price{
+    color: #e64340;
+    margin-left:60rpx;
+}
+.ar_line{
+    width:100%;
+    height:1rpx;
+    content: '';
+    background: #ddd;
+    margin:30rpx 0rpx;
+}
+.ar_book{
+    background:#d24a58;
+    font-size: 32rpx;
+    color:#fff;
+    border-radius: 0rpx;
+    margin:40rpx 0rpx 10rpx;
+}
+
+
+input{
+	height: 80rpx;
+	line-height: 80rpx;
+ 	font-family: inherit;
+}
+.input-list{
+	padding: 0 20rpx;
+	margin: 20rpx 0;
+	background: #fff;
+	border-top: 1rpx solid #ddd;
+}
+.input-list .input-item{
+  height: 115rpx;
+	display: flex;
+	font-size: 36rpx;
+	border-bottom: 1rpx solid #dcdcdc;
+  box-sizing: border-box;
+  align-items: center;
+}
+.input-list .input-item:first-child{
+	border-top: 0;
+}
+.input-item-label{
+	width: 140rpx;
+  height: 80rpx;
+	color: #444;
+  text-align: center;
+  display:flex;
+align-items:center;
+margin-right: 20rpx;
+font-size: 30rpx;
+}
+.input-item-label image {
+  width: 44rpx;
+  height: 80rpx;
+  margin: 0 30rpx 0 0;
+}
+.input-item-content{
+	color: #6f6f6f;
+	flex:1;
+  float:left;
+  width: 536rpx;
+  line-height: 80rpx;
+}
+.input-list .input-item-full {
+padding-top: 10rpx;
+display: flex;
+border-bottom: 1rpx solid #dcdcdc;
+min-height: 115rpx;
+box-sizing: border-box;
+}
+.input-list .input-item-full .input-item-label {
+  float: left;
+}
+.input-list .input-item-full .input-item-content {
+  line-height: 80rpx;
+}
+.btn-submit button{
+  height: 80rpx;
+  margin-bottom: 20rpx;
+  color: #fff;
+  background-color: #4bd7bd;
+  border-radius: 10rpx;
+  font-size: 32rpx;
+}

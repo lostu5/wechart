@@ -1,0 +1,53 @@
+<view class="section">
+</view>
+<form bindsubmit='insertcarInfo'>
+<view hidden="true"><input name="userId" value='{{userId}}'> </input>
+
+</view>
+<view class='care-con'>
+<view class='care-list'>
+  <image src='../../images/pubname.png'></image>
+  <view class='care-tit'>车主姓名</view>: 
+ 
+ <input name="userName" placeholder="请输入车主姓名"  />
+</view>
+<view class='care-list'>
+  <image src='../../images/punphone.png'></image>
+  <view class='care-tit'>挪车电话</view>:
+  <input name="userTel" placeholder="请输入手机号"  />
+</view>
+<view class='care-list'>
+        <image src='../../images/pubcarenum.png'></image>
+        <view class='care-tit'>车牌</view>:
+        <input name="carNumber" disabled="disabled"   placeholder="请输入车牌号"  bindtap="d1" value="{{carNo}}"> </input>
+</view>
+    <view class="container">  
+        <!-- 省 -->  
+        <view class="provinces" hidden='{{hidden1}}'>  
+                <view class="pro_li lf" wx:for="{{item1}}" wx:key="{{index}}" bindtap='sheng' data-sh="{{item}}">{{item}}</view>  
+                <view class="pro_del lf" bindtap='null'>清空</view>  
+                <view class="pro_close lf" bindtap='d2'>关闭</view>     
+        </view>  
+        <!-- 号码  -->  
+        <view class="keyNums" hidden='{{hidden2}}'>  
+                <view class="pro_li lf" wx:for="{{item2}}" wx:key="{{index}}" bindtap='other' data-ot="{{item}}">{{item}}</view>  
+                <view class="bot">  
+                    <view class="pro_ok lf" bindtap='ok'>OK</view>  
+                    <view class="pro_d lf" bindtap='del'>Del</view>  
+                </view>     
+        </view>   
+    </view>
+
+<view class='care-list'>
+  <image src='../../images/puncolo.png'></image>
+  <view class='care-tit'>颜色</view>:  
+  <input name="carColor" placeholder="请输入颜色"  />
+</view>
+<view class='care-list'>
+  <image src='../../images/pubcartype.png'></image>
+  <view class='care-tit'>车型</view>:  
+  <input name="carType" placeholder="请输入车型"  />
+</view>
+</view>
+  <button form-type='submit'>新增</button>
+  </form>
